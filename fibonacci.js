@@ -2,29 +2,36 @@
 
 function fibs(n) {
     let fibArray = [];
-
     let num1 = 0;
     let num2 = 1;
+    let num3 = undefined;
     fibArray.push(num1);
     fibArray.push(num2);
 
-    for (let i = 1; i <= n - 2 ; i++) {
-        let num3 = num1 + num2;
+    while (fibArray.length < n) {
+        num3 = num1 + num2;
         fibArray.push(num3);
         num1 = num2;
         num2 = num3;
     }
 
     return fibArray;
-}
+};
+
+
+
+
 
 
 // Now write another function fibsRec which solves the same problem recursively.
 
-function fibsRec(n) {
-    
+// function fibsRec(n, array) {
+//     if (n < 2 ) {
+//         return 1;
+//     }
 
 
-}
 
-console.log(fibs(20));
+// }
+
+console.log(fibs(8));
