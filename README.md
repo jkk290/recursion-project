@@ -1,2 +1,2 @@
 # recursion-project
-Practice recursion to takle Fibonacci and merge sort
+Practice recursion to tackle Fibonacci and merge sort
